@@ -1,24 +1,289 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 1: Diamante</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 1: Diamante</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender la proyección responsable de la identidad digital.</li>
+                                        <li>Analizar y diseñar una presencia digital alineada a los valores personales y objetivos futuros.</li>
+                                        <li>Diferenciar entre “yo real”, “yo digital” y “persona digital”.</li>
+                                        <li>Analizar críticamente la imagen digital proyectada actual (qué muestro, qué oculto y por qué).</li>
+                                        <li>Reflexionar sobre autenticidad y coherencia en línea.</li>
+                                        <li>Reflexionar sobre cómo las publicaciones digitales reflejan la identidad y proyectan una imagen a largo plazo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express: El Iceberg de la Identidad</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Creación de un "Iceberg de la Identidad" para auto-reflexión sobre la imagen digital y un "Tweet de Aprendizaje" individual sobre autenticidad en línea.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                        <li>Hojas/cuadernos para el Challenge "El Iceberg de la Identidad".</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar conocimientos previos de 5º grado sobre reputación y construcción de imagen.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: Palabra Secreta Digital.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Hola, equipo! Hoy tenemos una sesión especial. Además de sus misiones de tecnología, Gnius Club tiene un pilar fundamental para su formación como líderes del futuro: la Ciudadanía Digital. Este es su entrenamiento para navegar el complejo mundo digital con inteligencia, ética y seguridad. La mayoría de estas misiones las realizarán en casa, a su propio ritmo, como verdaderos aprendices autónomos. Serán sus 'aventuras digitales' semanales. Pero hoy, para inaugurar este camino, vamos a completar la primera misión todos juntos aquí, para que entiendan la dinámica y el nivel de reflexión que esperamos."
+
+"Para empezar, activemos sus conocimientos previos. Voy a proyectar una palabra clave que es la base de todo. Tómense un minuto y en su cuaderno, definan con sus propias palabras qué significa y por qué es tan importante hoy en día.
+ <br>(En pantalla se proyecta: REPUTACIÓN)”"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Guía una breve reflexión para introducir el tema de la misión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Bien. La reputación se refiere a cómo nos perciben los demás. Es una imagen externa. Este año, vamos a profundizar. No solo nos preguntaremos ‘¿cómo me ven?’, sino ‘¿quién soy en línea y por qué?’. 🤔 Un diamante tiene muchas caras; algunas se ven a simple vista, otras solo con una mirada más atenta. Nuestra identidad digital es similar. Hoy, vamos a explorar esas caras. Bienvenidos a la Misión Diamante.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 22 minutos</h2>
+                <p>Explorar de forma individual las diferencias entre "yo real", "yo digital" y "persona digital", y cómo se conectan.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Diamante.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Excelente! Su reputación es cómo los ven los demás. Ahora vamos a profundizar. Para guiarlos en estas 16 aventuras digitales que tendrán a lo largo del año, no estarán solos. Así como Xolo es su copiloto de tecnología, tienen a ADA, nuestra IA especializada en ética y ciudadanía digital. ADA será su mentora personal en estas misiones. Ella les presentará los conceptos, les hará preguntas para reflexionar y los guiará en cada paso."
+
+"Ahora, vamos a hacer juntos lo que normalmente harían en casa. Conéctense a la plataforma. Iniciaremos nuestra primera aventura, la Misión Diamante. Cuando ADA se los pida, la clave de activación es: Misión Diamante 💎. Vamos a completarla juntos."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express: El Iceberg de la Identidad ⏰ 10 minutos</h2>
+                <p>Contextualizar la identidad digital como una estructura compleja con partes visibles y ocultas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express: El Iceberg de la Identidad ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: El Iceberg de la Identidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Vamos a aplicar estos conceptos. Un iceberg, como saben, solo muestra una pequeña parte de su masa sobre el agua. La mayor parte está oculta bajo la superficie. Nuestra identidad funciona de manera similar. <br>Este es su reto: Van a dibujar un iceberg para mapear su propia identidad digital. Su misión es analizar qué partes de ustedes muestran al mundo y qué partes, igual de importantes, permanecen privadas. No tienen que compartir nada personal, es un ejercicio de auto-reflexión.”"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 6. Los estudiantes dibujan un iceberg y en la punta (la parte visible) escriben o dibujan lo que suelen mostrar en línea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“En la punta de su iceberg, anoten 3 o 4 cosas que el mundo digital ve de ustedes. Pueden ser hobbies (videojuegos, deportes), gustos (música, series), o roles (estudiante, amigo). Esta es su ‘persona digital’, la parte que comparten activamente. Tienen 3 minutos.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 7. En la base del iceberg (la parte sumergida), los estudiantes anotan aspectos de su "yo real" que no suelen compartir.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, en la parte sumergida, anoten 3 o 4 aspectos de ustedes que son igual de importantes, pero que no muestran en línea. Pueden ser valores (lealtad, honestidad), miedos, sueños, o simplemente hobbies más privados. Esta es la base de su ‘yo real’. Reflexionen por qué eligen mantener estas partes para ustedes. Tienen 3 minutos.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 8. Guía una discusión general sin pedir que compartan detalles personales.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Observen su iceberg. No tienen que decirnos qué hay en la parte oculta. La pregunta para reflexionar es: ¿La punta de su iceberg (lo que muestran) es coherente con la base (quiénes son)? ¿O sienten que son dos cosas muy diferentes? Si alguien quiere compartir una reflexión general sobre esta idea de coherencia, este es el momento.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en un principio personal sobre la gestión de la identidad digital.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Para cerrar, anoten una idea clave que se quieran llevar. Una frase que resuma su enfoque sobre la autenticidad en línea.<br>Ejemplo del maestro: Mi identidad digital no es una máscara, es una ventana. Yo decido qué tanto se abre, pero lo que se ve es real. #IdentidadAutentica.<br>Piensen en cómo podrían aplicar esto en otra situación. Eso es lo que vale la pena.”"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes compartir el tweet con un compañero y escuchar su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su frase con la persona de al lado. Escuchen su idea. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? El análisis mejora con el diálogo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"¡Misión Diamante completada! Hoy han tenido una muestra de cómo serán sus misiones de Ciudadanía Digital. Vieron que no se trata de respuestas correctas o incorrectas, sino de reflexión profunda. Entendieron que ser un ciudadano digital maduro es saber gestionar la compleja relación entre su 'yo real' y su 'persona digital' con autenticidad y criterio."
+
+"Y ahora, hablemos de cómo su compromiso con estas misiones en casa será recompensado. Hemos creado un sistema llamado Mon-e, que es la moneda virtual de Gnius Club. Es nuestra forma de premiar su esfuerzo y, sobre todo, su responsabilidad. El sistema funciona así: por cada misión de tecnología que completen en clase, ganarán 5 Mon-e. Pero por cada una de estas 16 misiones de Ciudadanía Digital que completen en casa, ganarán 10 Mon-e. ¡El doble! Porque su desarrollo como líderes éticos es nuestra máxima prioridad."
+
+"Este Mon-e es muy valioso, ya que podrán intercambiarlo por horas de impresión 3D para materializar sus proyectos. Pero hay una condición clave, nuestra 'regla de oro': el poder de crear debe ir de la mano de la sabiduría para hacerlo responsablemente. Por lo tanto, su Mon-e permanecerá bloqueado y no podrán canjearlo hasta que hayan completado la totalidad de sus 16 misiones de Ciudadanía Digital. Es su pasaporte de responsabilidad. Así que, con la misión de hoy completada, acaban de ganar sus primeros 10 Mon-e. ¡Felicidades por empezar este importante viaje!"
+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
